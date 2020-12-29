@@ -21,7 +21,7 @@ const Todos = () => {
             ) : (
                 <div className="alert alert-light mt-3 w-75 mx-auto">
                     <p className="text-center">
-                    Schedule is empty  
+                    The List is empty  
                     </p>
                 </div>
             )}

@@ -4,10 +4,13 @@ import './index.css';
 import App from '../src/containers/App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStates from './containers/GlobalStates';
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
   <GlobalStates>
+  <BrowserRouter>
     <App />
+  </BrowserRouter>
   </GlobalStates>,
   document.getElementById('root')
 );

@@ -13,7 +13,7 @@ const AddNewTask = () => {
                 <div className="input-group w-100">
                     <input
                         type="text"
-                        className="form-control rounded"
+                        className="form-control rounded text-center"
                         placeholder="Add new Task"
                         value={context.todo}
                         onChange={context.handleTodoInput}

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TodoContext from '../context/todoContext';
 import { v4 as uuidv4} from "uuid";
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function GlobalStates(props) {
     const [getTodos, setTodos] = useState([]);
@@ -16,6 +17,12 @@ export default function GlobalStates(props) {
             todos.push(todo);
             setTodos(todos);
             setTodo("");
+         
+          //toastify new 
+          toast.success(`${getTodo} was added successfully`,{
+            position: "bottom-right",  
+            closeButton: true,
+          });
         }
     };
 
@@ -32,6 +39,9 @@ export default function GlobalStates(props) {
         const todos = [...getTodos];
         const filteredTodos = todos.filter(t => t.id !== id);
         setTodos(filteredTodos);
+        toast.error(`Task was deleted successfully!`,{
+            position:"bottom-right"
+            })
     };
 
     const handleTodoInput = event => {

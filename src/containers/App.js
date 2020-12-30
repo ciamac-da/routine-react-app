@@ -3,6 +3,7 @@ import Todos from "../components/Task/Todos";
 import About from '../components/common/About';
 import {Route, Switch} from "react-router-dom";
 import Nav from '../components/common/Nav';
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                     </Switch>
                     </div>
                 </div>
+                <ToastContainer />
             </div>
         </Fragment>
     );

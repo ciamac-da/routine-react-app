@@ -24,7 +24,7 @@ export default withRouter(function Nav(props) {
                 className="nav-link"
                 activeStyle={{backgroundColor:"green"}}
                 >
-                About
+                About Me
                 </NavLink>
                 </li>
             </ul>

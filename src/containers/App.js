@@ -1,10 +1,8 @@
 import React, {Fragment} from "react";
 import Todos from "../components/Task/Todos";
-import AddNewTask from "../components/Task/AddNewTask";
 import About from '../components/common/About';
 import {Route, Switch} from "react-router-dom";
 import Nav from '../components/common/Nav';
-import { render } from '@testing-library/react';
 
 const App = () => {
     return (
@@ -25,7 +23,6 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <AddNewTask />
         </Fragment>
     );
 };

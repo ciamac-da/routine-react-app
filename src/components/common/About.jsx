@@ -3,7 +3,7 @@ import React from "react";
 const About = ({ teachersName }) => {
     return (
         <div className="card text-center">
-            <div className="card-header">About Developer</div>
+            <div className="card-header">About Me</div>
             <div className="card-body">
                 <h5 className="card-title">Full-Stack MERN Developer</h5>
                 <p className="card-text">Name&nbsp;: {teachersName}</p>

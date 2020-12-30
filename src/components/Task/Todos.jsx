@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Todo from "./Todo";
 import TodoContext from "./../../context/todoContext";
+import AddNewTask from './AddNewTask';
 
 const Todos = () => {
     const context = useContext(TodoContext);
@@ -25,7 +26,9 @@ const Todos = () => {
                     </p>
                 </div>
             )}
+        <AddNewTask />
         </ul>
+
     );
 };
 
